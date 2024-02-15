@@ -8,11 +8,11 @@ public class Person {
     String cllassification;
 
 
-    public Person (int id, String name, String surname, String birthDate, String cllassification) {
+    public Person (int id, String name, String surname, LocalDate birthDate, String cllassification) {
         this.id = id;
         this.name = name;
         this.surname = surname;
-        this.birthDate = LocalDate.parse(birthDate);
+        this.birthDate = birthDate;
         this.cllassification = cllassification;
     }
 
