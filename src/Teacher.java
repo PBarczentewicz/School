@@ -7,9 +7,8 @@ public class Teacher extends Person{
     String supervisingClass;
 
 
-    public Teacher(int id, String name, String surname, String birthDate, String cllassification, String degree, Subject teachingSubject, String supervisingClass) {
-        super(id, name, surname, LocalDate.parse(birthDate), cllassification);
-        this.degree = degree;
+    public Teacher(int id, String name, String surname, String birthDate, Subject teachingSubject, String supervisingClass) {
+        super(id, name, surname, LocalDate.parse(birthDate));
         this.teachingSubject = teachingSubject;
         this.supervisingClass = supervisingClass;
     }
